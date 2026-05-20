@@ -30,7 +30,7 @@ if(form) {
         e.preventDefault()
 
         if( form.checkValidity()) {
-            const nome = document.getElementById('none').ariaValueMax;
+            const nome = document.getElementById('none').value;
             msg.textContent = `✅ Sucesso, ${nome}! Adesão registrada.`
             msg.className = 'mensagem-retorno sucesso';
             form.reset()
